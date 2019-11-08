@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>123</title>
+</head>
+<body>
+  <script>
+    var num= 1000 % 7;
+    console.log(num);
+    var week = 5 + num;
+    week = week % 7;
+    console.log(week);
+
+    var day = parseInt(prompt("天数"));
+    var num= day % 7;
+    var week = (5 + num) % 7;
+    console.log(week);
+
+    if(week==0) {
+      console.log("今天是星期日");
+    }else {
+      console.log("今天是星期"+ week);
+    }
+  </script>
+</body>
+</html>

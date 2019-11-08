@@ -1,0 +1,42 @@
+<script type="text/javascript">
+  function reverseString(str) {
+    array = str.split("")
+    array = array.reverse()
+    str = array.join("")
+    return str;
+  }
+
+
+
+  function add(n) {
+    var a1 = 1;
+    var a2 = 1;
+    for (var i = 3; i <= n; i++) {
+      var an = a1 + a2;
+      a1 = a2;
+      a2 = an;
+    }
+    return an;
+  }
+  console.log(add(5));
+
+
+
+  function add(x, y) {
+    var result = x * y;
+    return result;
+  }
+  var r = add(1, 2);
+  console.log(r)
+
+
+
+  function a(str) {
+    for (var i = 0; i < str.length; i++) {
+      if (str[i] == "1") {
+        str = str.replace("1", "2");
+      }
+    }
+    return str;
+  }
+
