@@ -1,0 +1,28 @@
+<html>
+
+<head>
+
+  <title>time</title>
+  <script language="javascript" type="text/javascript">
+
+    var newTime = (new Date()).getTime();
+    function showLeftTime() {
+      var now = new Date();
+      var year = now.getYear();
+      var month = now.getMonth();
+      var day = now.getDate();
+      var hours = now.getHours();
+      var minutes = now.getMinutes();
+      var seconds = now.getSeconds();
+      document.all.show.innerHTML = "" + year + "year" + month + "month" + day + "day " + hours + ":" + minutes + ":" + seconds + "";
+      var timeID = setTimeout(showLeftTime, 1000);
+    }
+  </script>
+</head>
+
+<body onload="showLeftTime()">
+  <label id="show">showTime</label>
+
+</body>
+
+</html>
