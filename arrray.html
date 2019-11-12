@@ -1,0 +1,20 @@
+<html>
+
+<body>
+  <script type="text/javascript">
+    var collection = [1, 1, 1, 2, 2, 3, 4];
+
+    function norepeat(collection) {
+
+      var result = [];
+
+      result = collection.filter(function (value, index, array) {
+
+        return index == array.indexOf(value);
+      })
+      return result;
+    }
+  </script>
+</body>
+
+</html>
