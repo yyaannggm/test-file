@@ -15,5 +15,5 @@ console.log(Person.prototype.constructor === Person)
 console.log(Father.prototype.constructor === Person);
 Father.prototype.constructor = Father;
 console.log(Father.prototype.constructor === Father);
-var one = new father(25);
+var one = new Father(25);
 console.log(one.constructor === Father) 
