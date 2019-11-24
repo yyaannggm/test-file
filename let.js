@@ -25,3 +25,15 @@ function fu() {
   console.log(varTest);
   console.log(letTest);
 }());
+
+(function () {
+  var varTest = 'test var';
+  let letTest = 'test let';
+
+  {
+    var varTest = 'varTest.';
+    let letTest = 'letTest.';
+  }
+  console.log(varTest);
+  console.log(letTest);
+}());
