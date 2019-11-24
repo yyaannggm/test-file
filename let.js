@@ -14,3 +14,14 @@ function fu() {
   var varTest = 'test var';
   let letTest = 'test let';
 }());
+
+(function () {
+  var varTest = 'test var';
+  let letTest = 'test let';
+
+  var varTest = 'varTest';
+  let letTest = 'letTest';
+
+  console.log(varTest);
+  console.log(letTest);
+}());
