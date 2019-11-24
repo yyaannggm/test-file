@@ -6,3 +6,11 @@ function fu() {
   var a = 10;
   console.log(a);
 }
+
+(function () {
+  console.log(varTest);
+  console.log(letTest);
+
+  var varTest = 'test var';
+  let letTest = 'test let';
+}());
