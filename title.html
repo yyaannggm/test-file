@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        var n = 0;
+        function title() {
+            n++;
+            if (n == 3) n = 1;
+            if (n == 2) {
+                document.title = "test";
+            }
+            if (n == 1) {
+                document.title = "test2";
+            }
+            setTimeout("title()", 1000);
+        }
+        title();
+    </script>
+</head>
+
+
+
+</html>
