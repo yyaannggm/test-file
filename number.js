@@ -29,3 +29,14 @@ const str3 = '3.45 6';
 console.log(Number(str3));// NaN
 console.log(parseInt(str3));// 3
 console.log(parseFloat(str3));
+
+
+const n = 999;
+console.log(Number.isFinite(n));
+const m = Infinity;
+console.log(Number.isFinite(m));
+
+
+console.log(Number.isSafeInteger(3));// true
+console.log(Number.isSafeInteger(9.6)); // false
+console.log(Number.isSafeInteger(Infinity));
